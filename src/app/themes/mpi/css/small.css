@@ -1,0 +1,541 @@
+/****** FILE: ../css/small.css *****/
+/*
+  ==========================
+  general page structure
+  ==========================
+*/
+
+.wrapper
+{
+  width: 32rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+#title-text
+{
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+/* primary navigation */
+/* ------------------ */
+
+#primary-nav
+{
+  position: relative;
+}
+
+#primary-nav > ul
+{
+  text-align: right;
+}
+
+#primary-nav > ul *
+{
+  text-align: left;
+}
+
+#primary-nav > ul > li
+{
+  display: inline-block;
+  position: static;
+}
+
+#primary-nav > ul > li + li
+{
+  margin-left: 1.4rem;
+}
+
+#primary-nav > ul > li#home-nav,
+#primary-nav > ul > li#menu-nav
+{
+  float: left;
+}
+
+#primary-nav > ul > li#menu-nav{
+  padding-top:2px;
+}
+
+#login-nav > a > span,
+#contact-nav > a > span
+{
+  display: none;
+}
+
+#login-nav > a:after,
+#contact-nav > a:after
+{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.primary-nav-drop-down:hover:before,
+.primary-nav-drop-down.active:before
+{
+  display: none;
+}
+
+.primary-nav-drop-down:hover > a,
+.primary-nav-drop-down.active > a
+{
+  color: #fff !important;
+}
+
+.primary-nav-drop-down > ul
+{
+  position: fixed;
+  top: 22rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  max-height: -webkit-calc(100% - 22rem);
+  max-height: -moz-calc(100% - 22rem);
+  max-height: calc(100% - 22rem);
+  overflow: auto;
+  z-index: 20 !important;
+  border: none;
+  margin: 0;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: translate3d(-110%,0,0);
+  -moz-transform: translate3d(-110%,0,0);
+  transform: translate3d(-110%,0,0);
+
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  transition: transform 0.6s;
+}
+
+.sticky .primary-nav-drop-down > ul
+{
+  top: 4.6rem;
+  max-height: -webkit-calc(100% - 4.6rem);
+  max-height: -moz-calc(100% - 4.6rem);
+  max-height: calc(100% - 4.6rem);
+}
+
+.primary-nav-drop-down.active > ul
+{
+  z-index: 20 !important;
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* menu nav */
+/* -------- */
+#menu-nav a:after
+{
+  content: '';
+  display: none;
+}
+
+#menu-nav > ul li
+{
+  padding-right: 0;
+}
+
+#menu-nav > ul ul li
+{
+  margin-right: 0;
+}
+
+/* back to top */
+/* ----------- */
+.back-to-top
+{
+  top: 19.8rem;
+}
+
+
+/*
+  ==========================
+  main body
+  ==========================
+*/
+#main-page aside
+{
+  padding-top: 2.4rem;
+  margin-top: 2rem;
+}
+
+/*
+  ==========================
+  footer
+  ==========================
+*/
+
+#page-foot-lower #nz-govt-footer-link{
+  float: none;
+  padding-top: 0.5rem;
+}
+
+/*
+===============================================================================
+TYPOGRAPHY
+===============================================================================
+*/
+
+/*
+  ==========================
+  default text
+  ==========================
+*/
+
+main
+{
+  font-size: 1.4rem;
+}
+
+/*
+  ==========================
+  headings / titles
+  ==========================
+*/
+
+h1#page-title
+{
+  font-size: 3.2rem;
+}
+
+/* heading */
+/* ------- */
+h2
+{
+  font-size: 2.8rem;
+  font-weight: normal;
+  color: #00849f;
+}
+
+/* sub-heading */
+/* ----------- */
+h3
+{
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #333;
+}
+
+/* minor heading */
+/* ------------- */
+h4
+{
+  font-size: 1.7rem;
+  font-weight: normal;
+  color: #133d5f;
+}
+
+/* minor heading 2 */
+/* --------------- */
+h5
+{
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #00849f;
+}
+
+/*
+==========================
+forms
+==========================
+*/
+
+main form
+{
+  padding: 1.2rem;
+  font-size: 1.4rem;
+}
+
+/* general form inner styles */
+/* ------------------------- */
+main form input,
+main form select,
+main form textarea
+{
+  width: 100%;
+  max-width: none;
+  font-size: 1.4rem;
+}
+
+main form .field + .field
+{
+  margin-top: 1rem;
+}
+
+.Actions
+{
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+}
+
+
+main form .columns .column
+{
+  float: none;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+main form .columns .column + .column
+{
+  margin-top: 1rem;
+}
+
+main form span.helper
+{
+  left: auto;
+  right: 0;
+}
+
+main form span.extra.popup
+{
+  left: auto;
+  right: 2.4rem;
+  max-width: 24rem;
+}
+
+
+/*
+==========================
+tables
+==========================
+*/
+
+main table
+{
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+main table th
+{
+  padding: 0.4rem 0.4rem 0.3rem 0.4rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+main table td
+{
+  padding: 0.4rem;
+}
+
+main table td img
+{
+  width: 12rem;
+  margin: 0 0.8rem 0.5rem 0;
+}
+
+main .table-wrapper
+{
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*
+==========================
+common tiles
+==========================
+*/
+#main-page .tile
+{
+  width: 100% !important;
+  height: auto !important;
+  margin-left: 0 !important;
+}
+
+#main-page .tile a
+{
+  height: auto;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+
+#main-page .tile h2
+{
+  text-align: left;
+  padding-bottom: 0.4rem;
+}
+
+#main-page .tile figure
+{
+  width: 15rem;
+  height: 14rem;
+  margin: 0 1rem 0 0 !important;
+}
+
+#main-page .tile figure + *
+{
+  margin-top: 0 !important;
+}
+
+/* promo tile variation */
+/* -------------------- */
+#main-page .tile.promo
+{
+  height: auto;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#main-page .tile.promo a
+{
+  height: auto;
+}
+
+#main-page .tile.promo figure
+{
+  float: left;
+  width: 8rem;
+  height: auto !important;
+}
+
+#main-page .tile.promo h2
+{
+  font-size: 1.8rem;
+  clear: none !important;
+}
+
+
+/*
+  ==========================
+  feature list / what's popular list
+  ==========================
+*/
+.column + .feature-list.column,
+.feature-list
+{
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+#main-page * + .feature-list
+{
+  margin-top: 1rem !important;
+}
+
+.feature-list h2
+{
+  font-size: 2.2rem;
+}
+
+
+
+/*
+  ==========================
+  article lists (with tags)
+  ==========================
+*/
+
+/* tag list filter */
+/* --------------- */
+.tag-list
+{
+  font-size: 1.3rem;
+}
+
+
+/*
+==========================
+modal pop ups
+==========================
+*/
+.modal
+{
+  top: 4rem;
+  right: 0;
+  margin-right: 0;
+  width: 100%;
+  min-height: 6rem;
+  padding: 1rem;
+}
+
+
+/*
+  ==========================
+  home page
+  ==========================
+*/
+
+.sticky-margin {
+  margin-top: -8.8rem;
+}
+
+
+/* nav tags */
+/* -------- */
+ul#home-nav-tags li
+{
+  margin: 0 0.3rem 0.5rem 0;
+}
+
+ul#home-nav-tags li a
+{
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+}
+
+
+/* home and landing pages */
+/* ---------------------- */
+.home #main-page .wrapper,
+.landing #main-page .wrapper
+{
+  width: 32rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.home #main-page .tile,
+.landing #main-page .tile
+{
+  float: none;
+  margin-left: 0;
+}
+
+.home #main-page .tile:nth-child(4n+1),
+.landing #main-page .tile:nth-child(4n+1)
+{
+  margin-left: 0;
+}
+
+.home #main-page .feature-list.column,
+.landing #main-page .feature-list.column
+{
+  margin-left: 0;
+  width: 100%;
+}
+
+.home #main-page * + .feature-list.column,
+.landing #main-page * + .feature-list.column
+{
+  margin-top: 0;
+}
+
+
+/*
+  ==========================
+  landing page
+  ==========================
+*/
+main .upper article
+{
+  font-size: 1.4rem;
+}
+
+main .upper article figure
+{
+  width: 8rem;
+}
+

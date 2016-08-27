@@ -1,0 +1,69 @@
+   <div id="page-wrapper">
+  <header id="page-head" role="banner">
+            <div class="wrapper">
+                <h1><a href="https://www.mpi.govt.nz/" title="MPI Home Page"></a> <img alt="MPI Print Logo." src="app/themes/mpi/images/mpi-logo-print.gif"></h1>
+                <div id="page-head-utilities">
+ <div id="title-text">
+                      {{title}}
+                    </div>
+  <!-- Title for the top left corner. In href put the url for the application home page -->
+
+                  
+                </div>
+                 <nav id="navBar" role="navigation">
+                        <ul>
+			<li><a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
+			<li><a [routerLink]="['/regions']" routerLinkActive="active">Fishing Regions</a></li>
+			<li><a [routerLink]="['/marineareas']" routerLinkActive="active">Fishing Areas</a></li>
+			<li><a [routerLink]="['/fishlist']" routerLinkActive="active">Fish List</a></li>
+			<li><a [routerLink]="['/fishingrules']" routerLinkActive="active">Fishing Rules</a></li>
+			<li><a [routerLink]="['/restrictions']" routerLinkActive="active">Restrictions</a></li>
+                        </ul>
+                    </nav>
+                <!--  <a class="back-to-top" href="#page-top" title="Back to top of page. "></a>-->
+            </div>
+        </header> 
+       
+        <section class="cf wrapper" id="main-page">
+            <main id="main-content" role="main">
+                <router-outlet></router-outlet>
+            
+            </main>
+        </section>
+         </div>
+  <!--footer -->
+    <footer id="page-foot" role="contentinfo">
+        <div id="page-foot-upper">
+            <div class="wrapper table">              
+                <section class="table-cell" id="footer-contacts">
+                    <h2>Contacts</h2>
+                    <!-- Contact information related to the application. For href, use tel: for telephone and mailto: for email -->
+                    <ul>
+                        <li><span>Contact</span><a href="tel:XXXXXXXXXX" rel="nofollow">XXXX XX XX XX</a></li>
+                        <li><span>Contact</span><a href="tel:XXXXXXXXXX" rel="nofollow">XXXX XX XX XX</a></li>                                                
+                        <li><span>Email</span><a href="mailto:xxxx@mpi.govt.nz" rel="nofollow">xxxx@mpi.govt.nz</a></li>                        
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div id="page-foot-lower">
+            <div class="wrapper" id="page-foot-utility-links">
+                <p>
+                    <!-- Ask the legal team about copyright and disclaimers. Add any other related links -->
+                    <a href="#">Disclaimer</a> 
+                    &nbsp;|&nbsp; 
+                    <a href="#">Copyright</a>
+                    &nbsp;|&nbsp; 
+                    <a href="#">Link</a>
+                    &nbsp;|&nbsp; 
+                    <a href="#">Link</a>
+                    &nbsp;|&nbsp; 
+                    <a href="#">Link</a>
+                </p>
+                <p id="nz-govt-footer-link">
+                    <a href="http://www.govt.nz/" target="_blank" title= "newzealand.govt.nz - connecting you to New Zealand central &amp; local government services">Govt.nz</a>
+                </p>
+            </div>
+        </div>
+    </footer> 
+    <!-- End footer -->

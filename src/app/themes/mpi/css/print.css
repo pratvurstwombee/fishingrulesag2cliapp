@@ -1,0 +1,444 @@
+/****** FILE: ../css/print.css *****/
+/*
+  ===============================================================================
+  COMPONENTS TO BE HIDDEN FROM PRINT
+  ===============================================================================
+*/
+
+#page-head h1 a,
+#page-head div a,
+#page-head-utilities,
+.back-to-top,
+#breadcrumbs,
+#page-banner,
+#quick-finder,
+#secondary-nav,
+#page-foot-upper section,
+#page-foot-lower,
+.bookmarks,
+.book-navigation,
+.doc-cart-tab,
+.page-feedback,
+#login-modal,
+.Actions,
+h2.dst-section-title
+{
+  display: none;
+}
+
+
+/*
+  ===============================================================================
+  PAGE LAYOUT AND STRUCTURAL ELEMENTS
+  ===============================================================================
+*/
+
+/* page head */
+/* --------- */
+#page-head
+{
+  height: auto;
+}
+
+#page-head h1, #page-head div
+
+{
+  text-align: right;
+}
+
+#page-head h1 img, #page-head div img
+{
+  display: inline-block;
+  width: 34%;
+}
+
+/*
+  ==========================
+  footer
+  ==========================
+*/
+
+#page-foot-upper
+{
+  margin-top: 12pt;
+  padding-top: 6pt;
+  border-top: solid 1pt #eeeeee;
+}
+
+#page-foot-upper #footer-contacts
+{
+  display: block;
+}
+
+#footer-contacts h2
+{
+  font-size: 16pt;
+}
+
+#footer-contacts ul li span
+{
+  display: inline-block;
+  margin-right: 12pt;
+}
+
+#footer-contacts ul li a
+{
+  text-decoration: none;
+}
+
+
+
+/*
+  ===============================================================================
+  TYPOGRAPHY
+  ===============================================================================
+*/
+
+/*
+  ==========================
+  default text
+  ==========================
+*/
+
+html,
+body
+{
+  font-size: 12pt;
+}
+
+body,
+select,
+input,
+textarea
+{
+  font-family: sans-serif;
+  color: #222222;
+  line-height: 1.3;
+}
+
+
+/*
+  ==========================
+  headings / titles
+  ==========================
+*/
+
+h1#page-title
+{
+  font-size: 30pt;
+  line-height: 1.1;
+  font-weight: normal;
+}
+
+/* heading */
+/* ------- */
+h2
+{
+  font-size: 24pt;
+  line-height: 1.2;
+}
+
+/* sub-heading */
+/* ----------- */
+h3
+{
+  font-size: 20pt;
+  line-height: 1.2;
+}
+
+/* minor heading */
+/* ------------- */
+h4
+{
+  font-size: 16pt;
+  line-height: 1.2;
+}
+
+/* minor heading 2 */
+/* --------------- */
+h5
+{
+  font-size: 13pt;
+  line-height: 1.2;
+}
+
+/* header spacing */
+/* -------------- */
+main h1 + *,
+main h2 + *,
+main h3 + *,
+main h4 + *,
+main h5 + *
+{
+  margin-top: 2pt !important;
+}
+
+main * + h2,
+main * + h3,
+main * + h4,
+main * + h5
+{
+  margin-top: 18pt !important;
+}
+
+main hr + h2,
+main hr + h3,
+main hr + h4,
+main hr + h5
+{
+  margin-top: 10pt !important;
+}
+
+main p + p,
+main * + p
+{
+  margin-top: 12pt;
+}
+
+/*
+  ==========================
+  links
+  ==========================
+*/
+
+a
+{
+  color: #006699;
+  text-decoration: underline;
+}
+
+/*
+  ==========================
+  content lists
+  ==========================
+*/
+
+main ul
+{
+  margin: 0 0 0 12pt;
+  list-style-type: disc;
+}
+
+main ol
+{
+  margin: 0;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+main ol li
+{
+  padding: 2pt 0;
+  border-bottom: solid 1pt #cccccc;
+}
+
+main * + ul,
+main * + ol
+{
+  margin-top: 6pt;
+}
+
+/*
+  ==========================
+  forms
+  ==========================
+*/
+
+main form
+{
+
+}
+
+main * + form
+{
+  margin-top: 16pt;
+}
+
+/* general form inner styles */
+/* ------------------------- */
+main form input,
+main form select,
+main form textarea
+{
+  display: block;
+  width: 100%;
+  padding: 5pt;
+  border: solid 0.1rem #bcc6d4;
+}
+
+main form .field + .field
+{
+  margin-top: 12pt;
+}
+
+.Actions
+{
+  margin-top: 20pt;
+  padding-top: 20pt;
+  border-top: solid 1pt #cdd6dc;
+  text-align: right;
+}
+
+/* form field labels */
+/* ----------------- */
+main form label,
+main form .field fieldset
+{
+  display: inline-block;
+  color: #333333;
+}
+
+main form .req-indicator,
+main form .required
+{
+  color: #990000;
+}
+
+/* check boxes and radio buttons */
+/* ----------------------------- */
+main form .optionset
+{
+  list-style-type: none;
+  margin: 0;
+}
+
+main form .optionset label,
+main form .checkbox label
+{
+  display: inline;
+  vertical-align: middle;
+  color: #131313;
+}
+
+main form .optionset input,
+main form .checkbox input
+{
+  display: inline;
+  padding: 0;
+  width: auto;
+  margin-right: 4pt;
+  border: none;
+  vertical-align: middle;
+}
+
+
+
+/* buttons */
+/* ------- */
+button,
+.button,
+.button:visited,
+.Actions input
+{
+  display: inline-block;
+  height: 20pt;
+  width: auto;
+  padding: 0 12pt;
+  background-color: #8cc63f;
+  border: none;
+  text-align: center;
+  font-size: 12pt;
+  text-transform: uppercase;
+  line-height: 1.8;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+/*
+  ==========================
+  page info and feedback
+  ==========================
+*/
+
+/*
+  ==========================
+  common tiles
+  ==========================
+*/
+#main-page .tile
+{
+  overflow: hidden;
+  clear: both;
+}
+
+#main-page .tile + *
+{
+  clear: both;
+  margin-top: 10pt;
+}
+
+#main-page .tile h2
+{
+  margin: 0;
+  padding: 0 0 10pt 0;
+  font-size: 18pt;
+  line-height: 1;
+  font-family: 'source_sans_proregular';
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+#main-page .tile figure
+{
+  float: left;
+  max-width: 26%;
+  margin-right: 10pt;
+  overflow: hidden;
+}
+
+/* promo tile variation */
+/* -------------------- */
+#main-page .tile.promo
+{
+
+}
+
+#main-page .tile.promo a
+{
+
+}
+
+#main-page .tile.promo h2
+{
+  text-transform: none;
+  padding-bottom: 2pt;
+}
+
+#main-page .tile.promo a h2
+{
+  text-align: left;
+}
+
+
+/*
+  ==========================
+  feature list / what's popular list
+  ==========================
+*/
+
+#main-page * + .feature-list
+{
+  margin-top: 12pt;
+}
+
+.feature-list h2
+{
+  font-size: 16pt;
+  color: #333;
+}
+
+.feature-list ul
+{
+  list-style-type: none;
+  font-size: 13pt;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-list ul li
+{
+  padding: 4pt 0;
+}

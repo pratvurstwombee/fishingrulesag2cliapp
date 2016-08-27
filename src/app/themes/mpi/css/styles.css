@@ -1,0 +1,125 @@
+/****** FILE: themes/mpi/css/reset.css *****/
+/*
+  ===============================================================================
+  RESET DEFAULTS AND BROWSER STANDARDISATION
+  ===============================================================================
+*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* Enable border-box sizing model for fluid sizing, responsive layout simplicity.
+   Add htc to site root and behaviour to CSS for IE6/7 */
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems when using foreground images as sprites. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page, and text size adjust fix when changing page orientation */
+html {overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+/*
+  ==========================
+  links
+  ==========================
+*/
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+a:hover, a:focus, a:active {outline: none;}
+
+
+/*
+  ==========================
+  tables
+  ==========================
+*/
+table {border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+td img {vertical-align: top;} 
+
+/*
+  ==========================
+  forms
+  ==========================
+*/
+button, input, select, textarea {font-size: 100%; margin: 0; vertical-align: baseline;}
+button, input {line-height: normal;}
+button, input[type="button"], input[type="reset"], input[type="submit"] {-webkit-appearance: button;}
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+textarea{resize:none;}
+
+/* clickable elements */
+.clickable,
+label,
+input[type="button"],
+input[type="submit"],
+button {cursor: pointer;}
+
+
+/* mozilla input centering fix */
+input::-moz-focus-inner,
+button::-moz-focus-inner
+{
+border: 0;
+padding: 0;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* removal of default glow colour to input fields */
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover
+{
+  outline: none;
+  outline: 0;
+}
+
+/* removal of default invalid field shadow and glow on HTML5 form error */
+:-moz-submit-invalid {box-shadow: none;}
+:-moz-ui-invalid {box-shadow:none;}
+
+/*
+  ==========================
+  lightweight clearfix
+  ==========================
+*/
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/*
+  ==========================
+  visibility options
+  ==========================
+*/
+.hidden {display: none !important; visibility: hidden;}

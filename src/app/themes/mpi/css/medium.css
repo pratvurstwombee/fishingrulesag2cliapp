@@ -1,0 +1,241 @@
+/****** FILE: ../css/medium.css *****/
+/*
+  ==========================
+  general page structure
+  ==========================
+*/
+body
+{
+  padding-top: 22rem;
+}
+
+.wrapper
+{
+  width: 60rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/*
+  ==========================
+  page head
+  ==========================
+*/
+#page-head
+{
+  position: absolute;
+  height: 22rem;
+  background-image: url(../images/page-head-bg-tablet.png), url(../images/page-head-bg-tablet.png);
+  background-position: 0 11rem, 0 17.4rem;
+  background-repeat: no-repeat;
+  background-color: #323232;
+}
+
+#page-head .wrapper
+{
+  text-align: center;
+}
+
+/* sticky styling */
+/* -------------- */
+#page-head.sticky
+{
+  position: fixed;
+  top: -17rem;
+}
+
+/* organisation logo / tag line */
+/* ---------------------------- */
+#page-head h1
+{
+  float: none;
+  margin: 2.2rem auto 1.5rem auto;
+}
+
+/* header utilities */
+/* ---------------- */
+#page-head-utilities
+{
+  display: inline-block;
+  max-width: none;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+}
+
+
+/* primary navigation */
+/* ------------------ */
+.primary-nav-drop-down > ul
+{
+  width: 34rem;
+}
+
+#menu-nav > ul li
+{
+  white-space: normal;
+  position: relative;
+  padding: 0.4rem 0.4rem 0.4rem 3.4rem;
+  font-size: 1.7rem;
+}
+
+#menu-nav > ul li a
+{
+  display: block;
+}
+
+/* back to top */
+/* ----------- */
+.back-to-top
+{
+  top: 19.8rem;
+}
+
+
+#page-foot-lower p
+{
+  max-width: 40rem;
+}
+
+
+/*
+===============================================================================
+TYPOGRAPHY
+===============================================================================
+*/
+
+/*
+==========================
+tables
+==========================
+*/
+
+main table
+{
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+main table th
+{
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+main table td img
+{
+  max-width: 10rem;
+  margin: 0 0.6rem 0.4rem 0;
+}
+
+
+/*
+==========================
+forms
+==========================
+*/
+
+main form span.extra.popup
+{
+  left: auto;
+  right: 15rem;
+  max-width: 28rem;
+}
+
+
+
+/*
+  ==========================
+  common tiles
+  ==========================
+*/
+#main-page .columns.three .tile.column
+{
+  width: 31.4286%;
+  font-size: 1.5rem;
+}
+
+#main-page .columns.three .tile.column a
+{
+  font-size: 1.5rem;
+}
+
+#main-page .columns.three .tile.column h2
+{
+  font-size: 1.8rem;
+}
+
+/* promo tile variation */
+/* -------------------- */
+#main-page .columns.three .tile.promo.column h2
+{
+  text-transform: none;
+  padding-bottom: 0.2rem;
+}
+
+#main-page .columns.three .tile.promo.column figure
+{
+  height: 11.2rem;
+}
+
+/*
+===============================================================================
+PAGE TYPE OVERRIDES
+===============================================================================
+*/
+
+/*
+==========================
+home AND landing page
+==========================
+*/
+
+/* main page area */
+/* -------------- */
+.home #main-page .wrapper,
+aside .wrapper
+{
+  width: 46rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 auto;
+}
+
+/* main feature tiles */
+/* ------------------ */
+.home #main-page .tile:nth-child(2n+1),
+#main-page .tile:nth-child(2n+1)
+{
+  margin-left: 0;
+}
+
+/* main promo tiles */
+/* ---------------- */
+.home #main-page .tile.promo,
+ #main-page .tile.promo
+{
+  margin-bottom: 2rem;
+}
+
+
+/*
+==========================
+landing page
+==========================
+*/
+.columns.upper .column
+{
+  float: none;
+  width: auto;
+  margin-left: 0;
+}
+
+.columns.upper .column + .column
+{
+  margin-top: 1.4rem;
+}
+
+main .columns.two .column {
+  width:auto;
+  margin-left: 0px;
+}

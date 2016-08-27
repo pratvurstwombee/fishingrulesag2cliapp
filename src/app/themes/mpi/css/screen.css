@@ -1,0 +1,1968 @@
+/****** FILE: ../css/style.css *****/
+/*
+  ===============================================================================
+  EMBEDDED FONTS AT THE START OF THE CSS
+  ===============================================================================
+*/
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url('../font/source-sans-pro.regular-webfont.eot');
+  src: url('../font/source-sans-pro.regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/source-sans-pro.regular-webfont.woff') format('woff'),
+  url('../font/source-sans-pro.regular-webfont.ttf') format('truetype'),
+  url('../font/source-sans-pro.regular-webfont.svg#source_sans_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'source_sans_prosemibold';
+  src: url('../font/sourcesanspro-semibold-webfont.eot');
+  src: url('../font/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/sourcesanspro-semibold-webfont.woff') format('woff'),
+  url('../font/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+  url('../font/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'entypo';
+  src: url('../font/entypo.eot?38088458');
+  src: url('../font/entypo.eot?38088458#iefix') format('embedded-opentype'),
+  url('../font/entypo.woff?38088458') format('woff'),
+  url('../font/entypo.ttf?38088458') format('truetype'),
+  url('../font/entypo.svg?38088458#entypo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-awesome-social';
+  src: url('../font/font-awesome-social.eot?99330727');
+  src: url('../font/font-awesome-social.eot?99330727#iefix') format('embedded-opentype'),
+  url('../font/font-awesome-social.woff?99330727') format('woff'),
+  url('../font/font-awesome-social.ttf?99330727') format('truetype'),
+  url('../font/font-awesome-social.svg?99330727#font-awesome-social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'roboto_condensedbold';
+  src: url('../font/RobotoCondensed-Bold-webfont.eot');
+  src: url('../font/RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/RobotoCondensed-Bold-webfont.woff') format('woff'),
+  url('../font/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
+  url('../font/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../font/Roboto-Regular-webfont.eot');
+  src: url('../font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/Roboto-Regular-webfont.woff') format('woff'),
+  url('../font/Roboto-Regular-webfont.ttf') format('truetype'),
+  url('../font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/*
+  ===============================================================================
+  COMMON PAGE STRUCTURE AND ELEMENTS
+  ===============================================================================
+*/
+
+/*
+  ==========================
+  general
+  ==========================
+*/
+
+html,
+body
+{
+  height: 100%;
+}
+
+body
+{
+  padding-top: 11rem;
+  min-width: 20rem;
+  background-color: #fff;
+}
+
+
+.wrapper
+{
+  margin: 0 auto;
+  width: 95rem !important;
+  padding-bottom: 5rem;
+}
+
+/*
+  ==========================
+  header
+  ==========================
+*/
+
+#page-head
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 122px;
+  background: url(../images/page-head-bg-desktop.jpg) center top no-repeat #323232;
+  box-shadow: 0 0 0.4rem rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+#page-head .wrapper
+{
+  position: relative;
+}
+
+/* organisation logo / tag line */
+/* ---------------------------- */
+#page-head h1
+{
+  float: right;
+  display: block;
+  width: 41.5rem;
+  height: 7.3rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+#page-head h1 a
+{
+  display: block;
+  width: 41.5rem;
+  height: 7.3rem;
+  overflow: hidden;
+  background: url(../images/mpi-logo.svg) 0 0 no-repeat transparent;
+  background-size: contain;
+  text-decoration: none;
+  color: #fff;
+  text-indent: -999rem;
+}
+
+#page-head h1 img
+{
+  display: none;
+}
+
+
+/* header utilities */
+/* ---------------- */
+#page-head-utilities
+{
+  display: inline-block;
+  max-width: 54rem;
+  min-width: 38rem;
+  padding-left: 1rem;
+}
+
+/* title text */
+/* ---------------- */
+#title-text
+{
+  position: relative;
+  width: 100%;
+  height: 3.6rem;
+  margin: 1.6rem 0 1.2rem 0;
+  padding: 0 3.8rem 0 0;
+  font-family: 'source_sans_proregular';
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: normal;
+  color: white;
+}
+
+#title-text a
+{
+  color:white;
+  text-decoration: none;
+}
+
+/* primary nav */
+/* ----------- */
+#primary-nav
+{
+  padding-top: 1.3rem;
+}
+
+#primary-nav > ul
+{
+  display: block;
+  white-space: nowrap;
+  list-style-type: none;
+  font-size: 1.6rem;
+}
+
+#primary-nav > ul > li
+{
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 0;
+  float: left;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+#primary-nav > ul > li + li
+{
+  margin-left: 1.6rem;
+}
+
+
+#primary-nav > ul > li > a
+{
+  display: block;
+  position: relative;
+  z-index: 2;
+  height: 2.2rem;
+  overflow: hidden;
+  color: #fff;
+  line-height: 2.2rem;
+  vertical-align: middle;
+}
+
+#primary-nav > ul > li > a:hover,
+#primary-nav > ul > li > a:focus
+{
+  color: #006699;
+  text-decoration: none;
+}
+
+.primary-nav-drop-down:before
+{
+  display: none;
+  content: '';
+  position: absolute;
+  z-index: 8;
+  top: -1.4rem;
+  left: -2.2rem;
+  bottom: 0;
+  right: -2.2rem;
+  background-color: #fff;
+  border: solid 0.4rem #4A8416;
+  border-bottom: none;
+}
+
+.primary-nav-drop-down > ul
+{
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: -2.2rem;
+  margin-top: -0.4rem;
+  border: solid 0.4rem #4A8416;
+  -webkit-box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
+  box-shadow: 0 0 0.3rem rgba(0,0,0,0.3);
+  list-style-type: none;
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: #131313;
+  text-transform: none;
+}
+
+/* drop down show / hide */
+.primary-nav-drop-down:hover,
+.primary-nav-drop-down.active
+{
+  z-index: 10 !important;
+}
+
+.primary-nav-drop-down:hover > a,
+.primary-nav-drop-down.active > a
+{
+  z-index: 10 !important;
+  color: #131313 !important;
+}
+
+.primary-nav-drop-down:hover:before,
+.primary-nav-drop-down.active:before
+{
+  display: block;
+  z-index: 8 !important;
+}
+
+.primary-nav-drop-down:hover > ul,
+.primary-nav-drop-down.active > ul
+{
+  display: block;
+  z-index: 5 !important;
+}
+
+/* inner drop down styling */
+.primary-nav-drop-down > ul > li
+{
+  padding: 0.6rem 2rem;
+  text-align: left;
+}
+
+.primary-nav-drop-down > ul > li + li
+{
+  border-top: solid 0.1rem #cccccc;
+}
+
+.primary-nav-drop-down > ul > li h2
+{
+  font-family: 'source_sans_proregular';
+  font-size: 1.6rem;
+  color: #131313;
+}
+
+.primary-nav-drop-down > ul > li a
+{
+  color: #131313;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.primary-nav-drop-down > ul > li a:hover,
+.primary-nav-drop-down > ul > li a:focus
+{
+  color: #006699;
+}
+
+.primary-nav-drop-down ul ul
+{
+  display: none;
+}
+
+.primary-nav-drop-down > ul li .icon
+{
+  display: none;
+}
+
+/* nav font over rides */
+#primary-nav .entypo
+{
+  font-size: 2rem;
+}
+
+#primary-nav .home-text
+{
+  padding-left:5px;
+}
+
+
+/* menu nav styles */
+#menu-nav > a:before
+{
+  display: inline-block;
+  height: 2.2rem;
+  font-family: 'entypo';
+  content: '\e808';
+  font-size: 2.4rem;
+  line-height: 0.75;
+  padding: 0 0.6rem 0 0;
+  vertical-align: middle;
+}
+
+#menu-nav > a:after
+{
+  display: inline;
+  font-family: 'entypo';
+  content: '\e83b';
+  font-size: 2rem;
+  padding: 0 0.1rem 0 0.5rem;
+}
+
+#menu-nav:hover > a:after,
+#menu-nav.active > a:after
+{
+  content: '\e83e';
+}
+
+#menu-nav ul
+{
+  font-size: 1.8rem;
+}
+
+/* login nav styles */
+#login-nav > a:after
+{
+  display: inline;
+  font-family: 'entypo';
+  content: '\e81a';
+  font-size: 2rem;
+  padding: 0 0 0 0.6rem;
+}
+
+/*
+  ==========================
+  main body
+  ==========================
+*/
+
+#main-page
+{
+  padding: 30px 0 0 0;
+}
+
+/*
+  ==========================
+  main aside content
+  ==========================
+*/
+
+#main-page aside
+{
+  background: url(../images/hatching-bg.gif) 0 0 repeat transparent;
+  border-top: solid 0.1rem #cccccc;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: -5rem;
+}
+
+
+/*
+  ==========================
+  footer
+  ==========================
+*/
+
+#page-foot
+{
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  background-color: #2f3335;  
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+#page-foot h2
+{
+  font-family: 'source_sans_proregular';
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+#page-foot a
+{
+  color: #ccc;
+}
+
+#page-foot ul
+{
+  list-style-type: none;
+}
+
+#page-foot ul li
+{
+  margin-top: 0.3rem;
+}
+
+/* upper footer area */
+/* ----------------- */
+#page-foot-upper
+{
+  min-height: 24.9rem;
+  padding-top: 4rem;
+  background: url(../images/footer-bg-desktop.jpg) bottom center no-repeat transparent;
+}
+
+#page-foot-upper .wrapper.table
+{
+  height: 20.9rem;
+}
+
+#page-foot-upper .wrapper.table .table-cell > *
+{
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+
+#page-foot-upper .wrapper.table .table-cell:last-child > *
+{
+  margin-right: 0;
+}
+
+#page-foot-upper .wrapper.table .table-cell hr
+{
+  border-top: solid 0.1rem #454545;
+  margin-left: 0;
+}
+
+/* contact area */
+#footer-contacts span
+{
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+#footer-contacts a
+{
+  float: right;
+}
+
+/* lower footer area */
+/* ----------------- */
+#page-foot-lower
+{
+  border-top: solid 0.1rem #454545;
+  padding-top: 1.4rem;
+}
+
+#page-foot-lower p
+{
+  float: left;
+}
+
+#page-foot-lower #nz-govt-footer-link
+{
+  float:right;
+  width: 20.1rem;
+  overflow: hidden;
+}
+
+#nz-govt-footer-link a
+{
+  display: block;
+  width: 20.1rem;
+  height: 2.0rem;
+  background: url(../images/newzealand-government-rev.gif) 0 0 no-repeat transparent;
+  text-indent: -999rem;
+  background-size: 201px 20px;
+}
+
+/*
+  ==========================
+  columnar layouts
+  ==========================
+*/
+
+.columns h2{
+  font-size: 2.5rem;
+}
+
+.columns:before,
+.columns:after {
+  content:"";
+  display:table;
+}
+
+.columns:after {
+  clear:both;
+}
+
+.columns .column
+{
+  float: left;
+}
+
+.columns > .column:first-child
+{
+  margin-left: 0 !important;
+}
+
+/* standard layouts */
+/* ---------------- */
+main .columns.two .column
+{
+  width: 48%;
+  margin-left: 4%;
+}
+
+main .columns.three .column
+{
+  width: 31.42857143%;
+  margin-left: 2.857142854%;
+}
+
+/*
+  ==========================
+  pseudo tabular layouts
+  ==========================
+*/
+
+.table
+{
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-row
+{
+  display: table-row;
+}
+
+.table-cell
+{
+  display: table-cell;
+}
+
+
+/*
+  ===============================================================================
+  TYPOGRAPHY
+  ===============================================================================
+*/
+
+/*
+  ==========================
+  default text
+  ==========================
+*/
+
+html,
+body
+{
+  font-size: 10px; /* reset size for easy rem denominations of base 10 - note, non-rem supporting browsers fall back to px sizing in specific stylesheets */
+}
+
+body,
+select,
+input,
+textarea
+{
+  font-family: 'source_sans_proregular', sans-serif;
+  color: #131313;
+  line-height: 1.4;
+}
+
+main
+{
+  font-size: 1.8rem;
+}
+
+/*
+  ==========================
+  headings / titles
+  ==========================
+*/
+
+h1#page-title
+{
+  margin-top: -0.4rem;
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: normal;
+  color: #003f5f;
+}
+
+/* heading */
+/* ------- */
+h2
+{
+  font-family: 'source_sans_proregular';
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #00849f;
+  clear: both;
+}
+
+/* sub-heading */
+/* ----------- */
+h3
+{
+  font-family: 'source_sans_prosemibold';
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #333;
+  clear: both;
+}
+
+/* minor heading */
+/* ------------- */
+h4
+{
+  font-family: 'source_sans_prosemibold';
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #133d5f;
+}
+
+/* minor heading 2 */
+/* --------------- */
+h5
+{
+  font-family: 'source_sans_prosemibold';
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #00849f;
+}
+
+
+
+/* header spacing */
+/* -------------- */
+main h1 + *,
+main h2 + *,
+main h3 + *,
+main h4 + *,
+main h5 + *,
+main h6 + *
+{
+  margin-top: 0.3rem !important;
+}
+
+main * + h2
+{
+  margin-top: 3rem !important;
+}
+
+main * + h3,
+main * + h4,
+main * + h5,
+main * + h6
+{
+  margin-top: 2.4rem !important;
+}
+
+main h1 + h2,
+main h1 + h3,
+main h1 + h4,
+main h1 + h5,
+main h1 + h6,
+main h2 + h3,
+main h2 + h4,
+main h2 + h5,
+main h2 + h6,
+main h3 + h4,
+main h3 + h5,
+main h3 + h6,
+main h4 + h5,
+main h4 + h6,
+main h5 + h6
+{
+  margin-top: 0.3rem !important;
+}
+
+main hr + h2,
+main hr + h3,
+main hr + h4,
+main hr + h5
+{
+  margin-top: 1.6rem !important;
+}
+
+/*
+  ==========================
+  paragraphs
+  ==========================
+*/
+
+main .intro
+{
+  font-size: 1.5rem;
+}
+
+main .intro hr
+{
+  margin: 1.8rem 0;
+  border-top: 0.3rem solid #ededed;
+}
+
+main * + .intro,
+main h1#page-title + .intro
+{
+  margin-top: 0.6rem !important;
+}
+
+main p + p,
+main * + p
+{
+  margin-top: 1rem;
+}
+
+
+/*
+  ==========================
+  links
+  ==========================
+*/
+
+a
+{
+  color: #006699;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: #006699;
+}
+
+a:hover,
+a:focus
+{
+  text-decoration: underline;
+}
+
+a:focus img
+{
+  outline: dashed 1px;
+}
+
+/*
+  ==========================
+  main content imagery
+  ==========================
+*/
+
+main figure
+{
+  float: left;
+  clear: both;
+  width: 20rem;
+  margin: 1.2rem 1.2rem 1rem 0;
+  overflow: hidden;
+}
+
+main figure img
+{
+  display: block;
+  min-width: 20rem;
+  max-width: 100%;
+}
+
+main figure figcaption
+{
+  display: block;
+  width: 100%;
+  padding: 1.2rem 0.7rem;
+  margin-top: 0.3rem;
+  background-color: #f4f4f4;
+  border-bottom: solid 0.1rem #cccccc;
+  border-top: solid 0.1rem #00abbe;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #333333;
+}
+
+main h2 + figure,
+main h3 + figure,
+main h4 + figure,
+main h5 + figure
+{
+  margin-top: 1rem !important;
+}
+
+/* full width image */
+/* ---------------- */
+main figure.full-width
+{
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+main figure.full-width img
+{
+  width: 100%;
+}
+
+main * + figure.full-width
+{
+  margin-top: 1rem;
+}
+
+
+/*
+  ==========================
+  content lists
+  ==========================
+*/
+
+main ul
+{
+  margin: 0 0 0 2rem;
+  list-style-type: disc;
+}
+
+main ol
+{
+  margin: 0;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+main ol ol
+{
+  margin: 0 0 0 2rem;
+  list-style-type: lower-latin;
+}
+
+main ol li
+{
+  padding: 0.2rem 0;
+}
+
+main ol ol li
+{
+  border-bottom: none;
+  border-top: solid 0.1rem #cccccc;
+}
+
+main * + ul,
+main * + ol
+{
+  margin-top: 0.6rem;
+}
+
+
+/*
+  ==========================
+  forms
+  ==========================
+*/
+
+main form
+{
+  position: relative;
+  padding: 3rem;
+  background-color: #f4f4f4;
+  border: solid 0.1rem #bcc6d4;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+main * + form
+{
+  margin-top: 1.6rem;
+}
+
+/* disable form input */
+/* ------------------ */
+form.inactive:before
+{
+  position: absolute;
+  top: -0.1rem;
+  right: -0.1rem;
+  bottom: -0.1rem;
+  left: -0.1rem;
+  content: '';
+  background-color: rgba(256,256,256,0.5);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+form.inactive:after
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+  margin-top: -3.2rem;
+  margin-left: -3.2rem;
+  content: '';
+  background: url(../images/mpi-loader.gif) 0 0 no-repeat transparent;
+  background-size: contain;
+}
+
+/* general form inner styles */
+/* ------------------------- */
+main form input,
+main form select,
+main form textarea
+{
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  padding: 0.5rem 1rem;
+  border: solid 0.1rem #bcc6d4;
+  -webkit-box-shadow: inset 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.2);
+  box-shadow: inset 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.2);
+  font-size: 1.5rem;
+}
+
+main form .field
+{
+  position: relative;
+}
+
+main form .field + .field
+{
+  margin-top: 1.2rem;
+}
+
+.Actions
+{
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: solid 0.1rem #cdd6dc;
+  text-align: right;
+}
+
+.Actions input + input
+{
+  margin-left: 1rem;
+}
+
+.document-filter-tips {
+  font-size: 1.1rem;
+  float: left;
+  text-align: left;
+  width: 66%;
+}
+
+/* form field labels */
+/* ----------------- */
+main form label,
+main form .field fieldset
+{
+  display: inline-block;
+  font-family: 'source_sans_prosemibold';
+  color: #333333;
+}
+
+main form .req-indicator,
+main form .required,
+main form .validation,
+main form .error
+{
+  color: #990000;
+}
+
+main form span.extra
+{
+  display: block;
+  font-size: 90%;
+  color: #666666;
+}
+
+main form span.helper
+{
+  position: absolute;
+  top: -0.2rem;
+  left: 38rem;
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  background-color: #999999;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  font-family: 'entypo';
+  font-size: 1.3rem;
+  line-height: 1.63;
+  text-align: center;
+  cursor: pointer;
+}
+
+main form span.extra.popup
+{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: -0.2rem;
+  left: 41rem;
+  max-width: 20rem;
+  border: solid 0.2rem #71777B;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 0 0.6rem rgba(0,0,0,0.4);
+  font-size: 1.3rem;
+  color: #131313;
+}
+
+main form span.extra.popup.active
+{
+  display: block;
+}
+
+/* check boxes and radio buttons */
+/* ----------------------------- */
+main form .optionset
+{
+  list-style-type: none;
+  margin: 0;
+}
+
+main form .optionset label,
+main form .checkbox label
+{
+  display: inline;
+  vertical-align: middle;
+  font-family: 'source_sans_proregular';
+  color: #131313;
+}
+
+main form .optionset input,
+main form .checkbox input
+{
+  display: inline;
+  padding: 0;
+  width: auto;
+  margin-right: 0.4rem;
+  border: none;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+main form .fieldgroup-field{
+    display: inline-block;
+    width: 44%;
+}
+
+
+/* buttons */
+/* ------- */
+button,
+.button,
+.button:visited,
+.Actions input
+{
+  display: inline-block;
+  height: 3.3rem;
+  width: auto;
+  padding: 0 1.3rem;
+  background-color: #4A8416;
+  border: none;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: inset 0 -0.3rem 0 0 #3f7c13;
+  -moz-box-shadow: inset 0 -0.3rem 0 0 #3f7c13;
+  box-shadow: inset 0 -0.3rem 0 0 #3f7c13;
+  text-align: center;
+  font-family: 'source_sans_prosemibold';
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 3.3rem;
+  white-space: nowrap;
+  color: #ffffff;
+  -webkit-text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4);
+  -moz-text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4);
+  text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4);
+  cursor: pointer;
+
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+.Actions input:hover,
+.Actions input:focus
+{
+  background-color: #0085a0;
+  -webkit-box-shadow: inset 0 -0.3rem 0 0 rgba(0,86,109,1);
+  -moz-box-shadow: inset 0 -0.3rem 0 0 rgba(0,86,109,1);
+  box-shadow: inset 0 -0.3rem 0 0 rgba(0,86,109,1);
+  text-decoration: none;
+}
+
+button.inactive,
+button[inactive],
+.button.inactive,
+button.inactive:hover,
+button.inactive:focus,
+button[inactive]:hover,
+button[inactive]:focus,
+.button.inactive:hover,
+.button.inactive:focus,
+.Actions input[type='reset'],
+.Actions input.inactive,
+.Actions input.inactive:hover,
+.Actions input.inactive:focus
+{
+  background-color: #666666;
+  -webkit-box-shadow: inset 0 -0.3rem 0 0 rgba(153,153,153,1);
+  -moz-box-shadow: inset 0 -0.3rem 0 0 rgba(153,153,153,1);
+  box-shadow: inset 0 -0.3rem 0 0 rgba(153,153,153,1);
+  cursor: default;
+}
+
+.Actions input[type='reset']
+{
+  cursor: pointer;
+}
+
+.Actions input[type='reset']:focus
+{
+  background-color: #999999;
+}
+
+/* button with plus sign */
+button.plus:after,
+.button.plus:after,
+button.minus:after,
+.button.minus:after
+{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 1rem;
+  content: '\e80e';
+  font-family: 'entypo';
+  font-size: 1.6rem;
+  -webkit-text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4);
+  -moz-text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4);
+  text-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.4);
+}
+
+/* button with minus sign */
+button.minus:after,
+.button.minus:after
+{
+  content: '\e811';
+}
+
+/* search button */
+button.search-button,
+.button.search-button
+{
+  font-family: 'entypo';
+  display: inline-block;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/*
+  ==========================
+  tables
+  ==========================
+*/
+
+main table
+{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
+main table th
+{
+  padding: 0.8rem 1.3rem 0.6rem 1.3rem;
+  background-color: #0085a0;
+  font-family: 'source_sans_prosemibold';
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+
+main table td
+{
+  padding: 0.8rem 1.3rem;
+  border-top: solid 0.1rem #BAC7D3;
+  border-bottom: solid 0.1rem #BAC7D3;
+  border-left: solid 0.1rem #BAC7D3;
+}
+
+main table td:first-child,
+main table th:first-child
+{
+  border-left: none;
+}
+
+main table tbody tr:nth-child(2n+1) td
+{
+  background-color: #ECF0F3;
+}
+
+main table.no-shading tbody tr td,
+main table.naked tbody tr td
+{
+  background: transparent;
+}
+
+main table.naked tbody tr td
+{
+  border: none;
+}
+
+main table td img
+{
+  display: block;
+  width: 15rem;
+  float: left;
+  margin: 0 1rem 0.5rem 0;
+}
+
+main * + table
+{
+  margin-top: 1rem;
+}
+
+/*
+  ==========================
+  document / link highlight
+  ==========================
+*/
+main .table-header
+{
+  padding: 0.8rem 1.3rem 0.6rem 1.3rem;
+  background-color: #0085a0 !important;
+  font-family: 'source_sans_prosemibold';
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+main .feature-doc,
+main .feature-link
+{
+  padding: 1.4rem 1.4rem 1.4rem 7rem;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  border: solid 0.1rem #bcc6d4;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+main .feature-doc a,
+main .feature-link a
+{
+  display: inline-block;
+  padding-top: 1.4rem;
+  font-family: 'source_sans_prosemibold';
+  font-size: 1.8rem;
+}
+
+main .feature-link a:after
+{
+  content: attr(title);
+  display: inline;
+  padding-left: 0.5rem;
+  font-family: 'source_sans_proregular';
+  font-size: 1.5rem;
+}
+
+main .feature-doc a:hover:after,
+main .feature-link a:hover:after
+{
+  text-decoration: underline;
+}
+
+main .feature-doc:before,
+main .feature-link:before
+{
+  display: block;
+  margin: 0;
+  margin-left: -5.6rem;
+  float: left;
+  -webkit-border-radius: 2.3rem;
+  -moz-border-radius: 2.3rem;
+  border-radius: 2.3rem;
+  font-family: 'entypo';
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #fff;
+  background-color: #70777A;
+  text-align: center;
+}
+
+main .feature-doc:before
+{
+  width: 4.6rem;
+  height: 3.6rem;
+  padding: 1rem 0 0 0;
+  content: '\e86b';
+}
+
+main .feature-link:before
+{
+  width: 4.3rem;
+  height: 3.8rem;
+  padding: 0.8rem 0 0 0.3rem;
+  content: '\e827';
+}
+
+main * + .feature-doc,
+main * + .feature-link
+{
+  margin-top: 1rem;
+}
+
+/*
+  ==========================
+  special feature box
+  ==========================
+*/
+
+main .special-feature
+{
+  background-color: #f4f4f4;
+  border-top: solid 0.1rem #cccccc;
+  border-bottom: solid 0.4rem #00abbe;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+main * + .special-feature
+{
+  margin-top: 2.6rem;
+}
+
+main .special-feature h2
+{
+  font-size: 2.8rem;
+  color: #6e777a;
+  text-transform: uppercase;
+}
+
+main .special-feature h3
+{
+  font-size: 2rem;
+  color: #133d5f;
+}
+
+.column-layout-style
+{
+  -webkit-columns: 2;
+  -webkit-column-gap: 2.5rem;
+  -moz-columns: 2;
+  -moz-column-gap: 2.5rem;
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+
+/*
+  ==========================
+  simple highlight question text
+  ==========================
+*/
+.highlight-question
+{
+  padding: 10px 10px 10px 50px; padding: 1rem 1rem 1rem 5rem;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  background-color: #e9e9e9;
+  font-size: 15px; font-size: 1.5rem;
+}
+
+* + .highlight-question
+{
+  margin-top: 10px; margin-top: 1rem;
+}
+
+.highlight-question:before
+{
+  content: '\e814';
+  display: block;
+  float: left;
+  margin-left: -33px; margin-left: -3.3rem;
+  font-family: 'entypo';
+  font-size: 24px; font-size: 2.4rem;
+  line-height: 0.8;
+  color: #6e777a;
+}
+
+.highlight-question .inner
+{
+  overflow: hidden;
+}
+
+
+/*
+  ==========================
+  tool tips
+  ==========================
+*/
+
+main a.tool-tip
+{
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  padding: 0 0.2rem;
+  border: dashed 0.1rem #73787C;
+  text-decoration: none;
+  cursor: default;
+  color: inherit;
+}
+
+main a.tool-tip:before
+{
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  content: attr(data-tool-tip);
+  position: absolute;
+  z-index: 5;
+  bottom: 100%;
+  left: -50%;
+  width: 22rem;
+  height: auto;
+  margin-bottom: -0.2rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border: solid 0.2rem #71777B;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 0.5rem rgba(0,0,0,0.6);
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.6);
+  cursor: default;
+  font-size: 1.4rem;
+  text-align: center;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main a.tool-tip:after
+{
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  content: '';
+  position: absolute;
+  z-index: 6;
+  bottom: 100%;
+  left: 20%;
+  margin-bottom: -1.4rem;
+  width: 3.2rem;
+  height: 1.4rem;
+  background: url(../images/tool-tip-pointer.png) top center no-repeat transparent;
+  background-size: contain;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main a.tool-tip:hover:before,
+main a.tool-tip:focus:before,
+main a.tool-tip:hover:after,
+main a.tool-tip:focus:after
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+  ==========================
+  common tiles
+  ==========================
+*/
+#main-page .tile
+{
+  display: block;
+  width: 22rem;
+  height: 33rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+}
+
+#main-page .tile a
+{
+  display: block;
+  width: 100%;
+  height: 33rem;
+  padding: 1rem;
+  background-color: #ffffff;
+
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #151515;
+  text-decoration: none;
+
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#main-page .tile a:hover,
+#main-page .tile a:focus
+{
+  background-color: #ededed;
+  text-decoration: none;
+}
+
+#main-page .tile h2
+{
+  margin: 0;
+  padding: 0 0 1rem 0;
+  font-size: 2.2rem;
+  line-height: 1;
+  font-family: 'source_sans_proregular';
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+#main-page .tile a:hover h2,
+#main-page .tile a:focus h2
+{
+  text-decoration: none !important;
+}
+
+#main-page .tile figure
+{
+  display: block;
+  width: 100%;
+  height: 19rem;
+  margin: 0 0 0.6rem 0 !important;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main-page .tile figure img
+{
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* promo tile variation */
+/* -------------------- */
+#main-page .tile.promo
+{
+  height: 35rem;
+}
+
+#main-page .tile.promo a
+{
+  height: 35rem;
+  border-top: none;
+}
+
+#main-page .tile.promo h2
+{
+  text-transform: none;
+  padding-bottom: 0.2rem;
+}
+
+#main-page .tile.promo a h2
+{
+  text-align: left;
+}
+
+#main-page .tile.promo figure
+{
+  float: none;
+  height: 14rem;
+}
+
+#main-page .tile.promo .info
+{
+  height: auto;
+  overflow: hidden;
+}
+
+/*
+  ==========================
+  feature list / what's popular list
+  ==========================
+*/
+.feature-list h2
+{
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.feature-list ul
+{
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-list ul li
+{
+  padding: 0.4rem 0;
+  border-bottom: solid 0.1rem #cccccc;
+}
+
+/*
+/*
+  ==========================
+  sitemap listing style
+  ==========================
+*/
+
+.sitemap ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sitemap ul
+{
+  font-family: 'source_sans_prosemibold';
+  font-size: 1.8rem;
+}
+
+.sitemap ul li + li
+{
+  margin-top: 1.2rem;
+}
+
+/* sitemap variation for landing pages */
+/* ----------------------------------- */
+.sitemap.summary ul li
+{
+  padding-top: 0.8rem;
+  border-top: solid 0.1rem #cccccc;
+}
+
+
+/* back to top */
+/* ----------- */
+.back-to-top
+{
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 11rem;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: #999999;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'entypo';
+  font-size: 2.6rem;
+  line-height: 4rem;
+  color: #fff !important;
+  text-decoration: none !important;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+
+.back-to-top.show
+{
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.back-to-top.show:hover,
+.back-to-top.show:focus
+{
+  opacity: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*
+  ==========================
+  misc styles
+  ==========================
+*/
+
+/* horizontal rule */
+/* --------------- */
+hr
+{
+  display: block;
+  height: 0.1rem;
+  border: 0;
+  border-top: 0.1rem solid #ccc;
+  margin: 1.8rem 0 1.6rem 0;
+  padding: 0;
+}
+
+/* font styles */
+/* ----------- */
+b,
+strong
+.bold
+{
+  font-weight: normal;
+  font-family: source_sans_prosemibold;
+}
+
+/* custom text-selection colors */
+/* ---------------------------- */
+::-moz-selection
+{
+  background: #006699;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection
+{
+  background: #006699;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* character icons */
+/* --------------- */
+.entypo{font-family: entypo;}
+
+/* custom webkit tap highlight color */
+/* ---------------------------------- */
+a:link
+{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+} 
+
+/* other */
+/* ----- */
+ins
+{
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none;
+}
+
+mark
+{
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.txt-left{text-align: left;}
+.txt-right{text-align: right;}
+
+.float-right{float: right;}
+.float-left{float: left;}
+
+
+/*
+  ===============================================================================
+  PAGE TYPE OVERRIDES
+  ===============================================================================
+*/
+
+
+/*
+  ==========================
+  home AND landing pages
+  ==========================
+*/
+
+/* main feature tiles */
+/* ------------------ */
+.home #main-page .tile,
+.landing #main-page .tile
+{
+  float: left;
+  margin: 0 0 2rem 2rem;
+}
+
+.home #main-page .tile:nth-child(4n+1),
+.landing #main-page .tile:nth-child(4n+1)
+{
+  margin-left: 0;
+}
+
+.home #main-page .tile a,
+.landing #main-page .tile a
+{
+  border-top: solid 0.3rem #fff;
+  color: #131313;
+}
+
+/* main promo tiles */
+/* ---------------- */
+.home #main-page .tile.promo,
+.landing #main-page .tile.promo
+{
+  margin-bottom: 0;
+}
+
+.home #main-page .tile.promo a,
+.landing #main-page .tile.promo a
+{
+  border-top: none;
+}
+
+/* feature lists */
+/* ------------- */
+.home #main-page .feature-list.column,
+.landing #main-page .feature-list.column
+{
+  margin-left: 2rem;
+  width: 22rem;
+}
+
+.home #main-page * + .feature-list.column,
+.landing #main-page * + .feature-list.column
+{
+  margin-top: 0;
+}
+
+main .upper article figure img {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+}
+
+main .upper article figure {
+    float: left;
+    overflow: hidden;
+    width: 12rem;
+    margin: 0 1.2rem 0 0;
+}
+
+main .upper article {
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+main .upper article div {
+    overflow: hidden;
+}
+
+main .upper article + article {
+    margin-top: 2rem;
+}
+
+/*
+  ==========================
+  fix anchor scrolling behind the fixed header
+  ==========================
+*/
+#main-content a:not([href]) {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}

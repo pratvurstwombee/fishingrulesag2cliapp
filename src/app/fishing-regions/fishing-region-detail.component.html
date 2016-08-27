@@ -1,0 +1,24 @@
+<div *ngIf="selectedRegion">
+    <h2>{{selectedRegion.region}} details!</h2>
+    <div>
+        <label>Id: </label>{{selectedRegion.id}}
+    </div>
+    <div>
+        <label>Region name: </label>{{selectedRegion.region}}
+    </div>
+    <div>
+        <label>Region description: </label>{{selectedRegion.regionFisihingDesc}}
+    </div>
+    <div>
+        <label>Finfish rule description: </label>{{selectedRegion.finFishRuleDesc}}
+    </div>
+    <div>
+        <label>Shellfish rule description: </label>{{selectedRegion.shellFishRuleDesc}}
+    </div>
+    <div>
+        <label>Rocklobster rule description: </label>{{selectedRegion.rockLobsterRuleDesc}}
+    </div>
+</div>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>
+<button (click)="goBack()">Back</button>

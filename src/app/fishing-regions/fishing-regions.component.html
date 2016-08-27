@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<h2>Fishing Regions in New Zealand</h2>
+
+<ul class="regions">
+	<li *ngFor="let region of regions"
+	  (click)="onSelect(region)">
+	    <span class="badge">{{region.id}}</span> {{region.region}}
+	</li>
+</ul>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>
