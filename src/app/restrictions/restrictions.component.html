@@ -1,3 +1,11 @@
-<p>
-  restrictions works!
-</p>
+<h1>{{title}}</h1>
+<h2>Fishing Areas in New Zealand</h2>
+
+<ul class="restrictions">
+	<li *ngFor="let restriction of restrictions"
+	  (click)="onSelect(restriction)">
+	    <span class="badge">{{restriction.restrctrionId}}</span> {{restriction.restrictionType}} in {{restriction.region}} {{restriction.marineArea}}
+	</li>
+</ul>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>

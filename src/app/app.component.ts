@@ -2,7 +2,9 @@ import { Component }                from '@angular/core';
 import { ROUTER_DIRECTIVES } 		    from '@angular/router';
 
 import { FishingRegionService }     from './fishing-regions/shared/';
-
+import { RestrictionService}        from './restrictions/shared/';
+import { FishingRuleService }       from './fishing-rules/shared';
+import { FishService }              from './fish-list/shared';
 
 @Component({
   moduleId: module.id,
@@ -12,6 +14,9 @@ import { FishingRegionService }     from './fishing-regions/shared/';
   directives: [ROUTER_DIRECTIVES],
   providers: [
   	FishingRegionService,
+    RestrictionService,
+    FishingRuleService,
+    FishService
   ]
 })
 export class AppComponent {

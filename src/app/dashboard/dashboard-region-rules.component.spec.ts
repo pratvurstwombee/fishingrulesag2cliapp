@@ -3,11 +3,11 @@
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { addProviders, async, inject } from '@angular/core/testing';
-import { FishingRulesComponent } from './fishing-rules.component';
+import { DashboardRegionRulesComponent } from './dashboard-region-rules.component';
 
-describe('Component: FishingRules', () => {
+describe('Component: DashboardRegionRules', () => {
   it('should create an instance', () => {
-    let component = new FishingRulesComponent();
+    let component = new DashboardRegionRulesComponent();
     expect(component).toBeTruthy();
   });
 });

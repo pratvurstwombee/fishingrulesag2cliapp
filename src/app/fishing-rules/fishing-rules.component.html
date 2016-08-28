@@ -1,3 +1,11 @@
-<p>
-  fishing-rules works!
-</p>
+<h1>{{title}}</h1>
+<h2>Fishing Rules in New Zealand</h2>
+
+<ul class="fishingRules">
+	<li *ngFor="let fishingRule of fishingRules"
+	  (click)="onSelect(fishingRule)">
+	    <span class="badge">{{fishingRule.fishingRuleId}}</span> {{fishingRule.ruleType}} in {{fishingRule.region}} for {{fishingRule.fishName}}
+	</li>
+</ul>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>

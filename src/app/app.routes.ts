@@ -8,14 +8,9 @@ import { FishingRegionsComponent, FishingRegionDetailComponent } 		from './fishi
 // import { MarineAreasComponent }			from './marine-areas/marine-areas.component'
 // import { MarineAreaDetailComponent }	from './marine-areas/marine-area-detail.component'
 
-// import { FishListComponent }			from './fish-list/fish-list.component'
-// import { FishDetailComponent }			from './fish-list/fish-detail.component'
-
-// import { FishingRulesComponent }		from './fishing-rules/fishing-rules.component'
-// import { FishingRuleDetailComponent }	from './fishing-rules/fishing-rule-detail.component'
-
-// import { RestrictionsComponent }		from './restrictions/restrictions.component'
-// import { RestrictionDetailComponent }	from './restrictions/restriction-detail.component'
+import { FishListComponent, FishDetailComponent }			from './fish-list/'
+import { FishingRulesComponent, FishingRuleDetailComponent }		from './fishing-rules/'
+import { RestrictionsComponent, RestrictionDetailComponent }		from './restrictions/'
 
 const routes: RouterConfig = [
     {
@@ -53,36 +48,37 @@ const routes: RouterConfig = [
     //     component: MarineAreaDetailComponent
     // },
 	
-	// // FishListComponent
-    // {
-    //     path: 'fishlist',
-    //     component: FishListComponent
-    // },
-    // {
-    //     path: 'fishlist/detail/:id',
-    //     component: FishDetailComponent
-    // },
+    // FishListComponent
+    {
+        path: 'fishlist',
+        component: FishListComponent
+    },
+    {
+        path: 'fishlist/detail/:id',
+        component: FishDetailComponent
+    },
 	
 	// FishingRulesComponent
-    // {
-    //     path: 'fishingrules',
-    //     component: FishingRulesComponent
-    // },
-    // {
-    //     path: 'fishingrules/detail/:id',
-    //     component: FishingRuleDetailComponent
-    // },
-	
+    {
+        path: 'fishingrules',
+        component: FishingRulesComponent
+    },
+    {
+        path: 'fishingrules/detail/:id',
+        component: FishingRuleDetailComponent
+    },
+
 	// RestrictionsComponent
-    // {
-    //     path: 'restrictions',
-    //     component: RestrictionsComponent
-    // },
-    // {
-    //     path: 'restrictions/detail/:id',
-    //     component: RestrictionDetailComponent
-    // },
-	
+    {
+        path: 'restrictions',
+        component: RestrictionsComponent
+    },
+    {
+        path: 'restrictions/detail/:id',
+        component: RestrictionDetailComponent
+    },
+
+		
 ];
 
 export const appRouterProviders = [
