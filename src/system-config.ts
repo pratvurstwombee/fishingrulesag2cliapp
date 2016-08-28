@@ -38,12 +38,6 @@ const barrels: string[] = [
   'app/shared',
   'app/fishing-regions',
   'app/fishing-regions/shared',
-  'app/dashboard',
-  'app/fish-list',
-  'app/fishing-rules',
-  'app/marine-areas',
-  'app/restrictions',
-  /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages: any = {};

@@ -1,4 +1,4 @@
-export class FishingRulesAg2CliAppPage {
+export class AG2CliAppPage {
   navigateTo() {
     return browser.get('/');
   }

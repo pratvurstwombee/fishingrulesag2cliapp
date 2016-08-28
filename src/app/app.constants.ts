@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 
-// application-level (global) constatns
-
 @Injectable()
 export class Configuration {
 	// AZURE

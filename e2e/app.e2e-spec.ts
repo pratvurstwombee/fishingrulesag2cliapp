@@ -1,10 +1,10 @@
-import { FishingRulesAg2CliAppPage } from './app.po';
+import { AG2CliAppPage } from './app.po';
 
-describe('fishing-rules-ag2-cli-app App', function() {
-  let page: FishingRulesAg2CliAppPage;
+describe('ag2-cli-app App', function() {
+  let page: AG2CliAppPage;
 
   beforeEach(() => {
-    page = new FishingRulesAg2CliAppPage();
+    page = new AG2CliAppPage();
   });
 
   it('should display message saying app works', () => {

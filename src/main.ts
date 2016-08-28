@@ -8,9 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
-// Bootstrapping to instatiate a component to user at root-level
 bootstrap(AppComponent, [
   HTTP_PROVIDERS,
   appRouterProviders,
   Configuration
 ]).catch(error => console.error(error));
+
