@@ -5,7 +5,7 @@ import { FishingRegionService }     from './fishing-regions/shared/';
 import { RestrictionService}        from './restrictions/shared/';
 import { FishingRuleService }       from './fishing-rules/shared';
 import { FishService }              from './fish-list/shared';
-
+import { MarineAreaService }        from './marine-areas/shared';
 @Component({
   moduleId: module.id,
   selector: 'app-root',
@@ -16,7 +16,8 @@ import { FishService }              from './fish-list/shared';
   	FishingRegionService,
     RestrictionService,
     FishingRuleService,
-    FishService
+    FishService,
+    MarineAreaService
   ]
 })
 export class AppComponent {

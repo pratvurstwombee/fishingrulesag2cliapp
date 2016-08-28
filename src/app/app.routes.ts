@@ -1,16 +1,11 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 
-import { DashboardComponent } 			from './dashboard/'
-// import { DashboardViewsComponent }		from './dashboard/dashboard-views.component'
-
+import { DashboardComponent, DashboardViewsComponent } 			        from './dashboard/'
 import { FishingRegionsComponent, FishingRegionDetailComponent } 		from './fishing-regions/'
-
-// import { MarineAreasComponent }			from './marine-areas/marine-areas.component'
-// import { MarineAreaDetailComponent }	from './marine-areas/marine-area-detail.component'
-
-import { FishListComponent, FishDetailComponent }			from './fish-list/'
-import { FishingRulesComponent, FishingRuleDetailComponent }		from './fishing-rules/'
-import { RestrictionsComponent, RestrictionDetailComponent }		from './restrictions/'
+import { MarineAreasComponent, MarineAreaDetailComponent }			    from './marine-areas/'
+import { FishListComponent, FishDetailComponent }			            from './fish-list/'
+import { FishingRulesComponent, FishingRuleDetailComponent }		    from './fishing-rules/'
+import { RestrictionsComponent, RestrictionDetailComponent }		    from './restrictions/'
 
 const routes: RouterConfig = [
     {
@@ -22,10 +17,10 @@ const routes: RouterConfig = [
         redirectTo: '/dashboard',
         pathMatch: 'full'
     },
-    // {
-    //     path: 'dashboard/views/:regionId',
-    //     component: DashboardViewsComponent
-    // },
+    {
+        path: 'dashboard/views/:regionId',
+        component: DashboardViewsComponent
+    },
 	
 	// fishing regions
     {
@@ -39,14 +34,14 @@ const routes: RouterConfig = [
     },
 
 	// marine areas
-    // {
-    //     path: 'marineareas',
-    //     component: MarineAreasComponent
-    // },
-    // {
-    //     path: 'marineareas/detail/:id',
-    //     component: MarineAreaDetailComponent
-    // },
+    {
+        path: 'marineareas',
+        component: MarineAreasComponent
+    },
+    {
+        path: 'marineareas/detail/:id',
+        component: MarineAreaDetailComponent
+    },
 	
     // FishListComponent
     {

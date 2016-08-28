@@ -2,8 +2,7 @@
 <h2>Fish in New Zealand</h2>
 
 <ul class="fishList">
-	<li *ngFor="let fish of fishList"
-	  (click)="onSelect(fish)">
+	<li *ngFor="let fish of fishList" (click)="onSelect(fish)">
 	    <span class="badge">{{fish.id}}</span> {{fish.fishName}}
 	</li>
 </ul>
