@@ -1,0 +1,8 @@
+<h3>Fishing Restrictions</h3>
+<ul class="restrictions">
+	<li *ngFor="let restriction of restrictions">
+		{{restriction.restrictionType}} - {{restriction.marineArea}} 
+		<span *ngIf="restriction.note"> : {{restriction.note}}</span> 
+	</li>
+</ul>
+<span *ngIf="restrictions.length==0">No restrictions for this area</span>

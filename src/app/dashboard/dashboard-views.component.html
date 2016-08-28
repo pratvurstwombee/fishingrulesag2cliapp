@@ -1,0 +1,8 @@
+<div >
+  <h4>{{currentRegion}}</h4>
+</div>
+<div>
+  <app-view-restrictions [regionId]="currentRegionId"></app-view-restrictions>
+  <app-view-rules [regionId]="currentRegionId"></app-view-rules>
+</div>
+<button (click)="goBack()">Back</button>

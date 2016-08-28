@@ -1,0 +1,30 @@
+<div *ngIf="selectedRule">
+    <h2>{{selectedRule.region}} details!</h2>
+    <div>
+        <label>Rule Id: </label>{{selectedRule.fishingRuleId}}
+    </div>
+    <div>
+        <label>Region name: </label>{{selectedRule.region}}
+    </div>
+    <div>
+        <label>Fish name: </label>{{selectedRule.fishName}}
+    </div>
+    <div>
+        <label>Finfish rule type: </label>{{selectedRule.ruleType}}
+    </div>
+    <div>
+        <label>Min fish length (cm): </label>{{selectedRule.minFishLength}}
+    </div>
+    <div>
+        <label>Max daily limit: </label>{{selectedRule.maxDailyLimit}}
+    </div>
+    <div>
+        <label>Min set net mesh size (cm): </label>{{selectedRule.minSetNetMeshSize}}
+    </div>
+    <div>
+        <label>Min size (cm): </label>{{selectedRule.minSize}}
+    </div>
+</div>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>
+<button (click)="goBack()">Back</button>

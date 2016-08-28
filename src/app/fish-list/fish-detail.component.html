@@ -1,0 +1,33 @@
+<div *ngIf="selectedFish">
+    <h2>{{selectedFish.fishName}} details!</h2>
+    <div>
+        <label>Id: </label>{{selectedFish.id}}
+    </div>
+    <div>
+        <label>Fish name: </label>{{selectedFish.fishName}}
+    </div>
+    <div>
+        <label>Sceientific Fish Name: </label>{{selectedFish.scientificFishName}}
+    </div>
+    <div>
+        <label>Maori Name: </label>{{selectedFish.maoriName}}
+    </div>
+    <div>
+        <label>Key Name: </label>{{selectedFish.keyName}}
+    </div>
+    <div>
+        <label>Keyword: </label>{{selectedFish.keyword}}
+    </div>
+    <div>
+        <label>Common Alternative Name: </label>{{selectedFish.commonAltName}}
+    </div>
+    <div>
+        <label>Fish Type: </label>{{selectedFish.fishType}}
+    </div>
+    <div>
+        <label>National Size (cm): </label>{{selectedFish.nationalSize}}
+    </div>
+</div>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>
+<button (click)="goBack()">Back</button>

@@ -1,0 +1,9 @@
+<h3>Fishing Regions in NZ</h3>
+<div class="grid grid-pad">
+    <div *ngFor="let region of regions" (click)="gotoDetail(region)" class="col-1-4">
+        <div class="module region">
+            <h4>{{region.region}}</h4>
+        </div>
+    </div>
+</div>
+

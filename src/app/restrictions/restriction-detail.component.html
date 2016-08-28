@@ -1,0 +1,21 @@
+<div *ngIf="restriction">
+    <h2>{{restriction.region}} - {{restriction.marineArea}} restriction details!</h2>
+    <div>
+        <label>Restriction Id: </label>{{restriction.restrctrionId}}
+    </div>
+    <div>
+        <label>Fishing Region: </label>{{restriction.region}}
+    </div>
+    <div>
+        <label>Fishing area: </label>{{restriction.marineArea}}
+    </div>
+    <div>
+        <label>Restriction type: </label>{{restriction.restrictionType}}
+    </div>
+    <div>
+        <label>Note: </label>{{restriction.note}}
+    </div>
+</div>
+
+<div class="error" *ngIf="error">Error returned : {{error}}</div>
+<button (click)="goBack()">Back</button>

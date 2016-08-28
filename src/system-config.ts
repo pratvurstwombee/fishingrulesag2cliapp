@@ -38,6 +38,16 @@ const barrels: string[] = [
   'app/shared',
   'app/fishing-regions',
   'app/fishing-regions/shared',
+  'app/dashboard',
+  'app/fishing-rules',
+  'app/fishing-rules/shared',
+  'app/restrictions',
+  'app/restrictions/shared',
+  'app/marine-areas',
+  'app/marine-areas/shared',
+  'app/fish-list',
+  'app/fish-list/shared',
+
 ];
 
 const cliSystemConfigPackages: any = {};

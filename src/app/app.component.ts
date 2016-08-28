@@ -2,6 +2,10 @@ import { Component }                from '@angular/core';
 import { ROUTER_DIRECTIVES } 		    from '@angular/router';
 
 import { FishingRegionService }     from './fishing-regions/shared/';
+import { RestrictionService}        from './restrictions/shared/';
+import { FishingRuleService }       from './fishing-rules/shared';
+import { MarineAreaService }        from './marine-areas/shared';
+import { FishService }              from './fish-list/shared';
 
 @Component({
   moduleId: module.id,
@@ -10,9 +14,13 @@ import { FishingRegionService }     from './fishing-regions/shared/';
   styleUrls: ['app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
-  	FishingRegionService
+  	FishingRegionService,
+    RestrictionService,
+    FishingRuleService,
+    MarineAreaService,
+    FishService
   ]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Fishing Rules - SPA Angular2 App';
 }
